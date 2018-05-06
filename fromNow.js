@@ -43,7 +43,9 @@
 		var chunks = [], period, val;
 		for (period in timeframes) {
 			val = timeframes[period];
-			chunks.push(pluralize(val, period));
+                        if(val) {
+			        chunks.push(pluralize(val, period));
+                        }
 		}
 
 		// Limit the returned array to return 'max' of non-null segments
