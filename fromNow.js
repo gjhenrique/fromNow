@@ -33,11 +33,11 @@
 		if (ms < msMinute) return 'just now';
 
 		var timeframes = {
-			year: Math.floor(ms / msYear),
-			month: Math.floor((ms % msYear) / msMonth),
-			day: Math.floor((ms % msMonth) / msDay),
-			hour: Math.floor((ms % msDay) / msHour),
-			minute: Math.floor((ms % msHour) / msMinute)
+                        y: Math.floor(ms / msYear),
+                        mon: Math.floor((ms % msYear) / msMonth),
+                        d: Math.floor((ms % msMonth) / msDay),
+                        h: Math.floor((ms % msDay) / msHour),
+                        min: Math.floor((ms % msHour) / msMinute),
 		};
 
 		var chunks = [], period, val;
