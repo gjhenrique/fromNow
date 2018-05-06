@@ -15,7 +15,7 @@
 	'use strict';
 
 	function pluralize(val, str) {
-		return val + ' ' + ((val > 1) ? (str + 's') : str);
+		return val + str;
 	}
 
 	var msMinute = 60 * 1000,
